@@ -4,15 +4,16 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/andreagrandi/go-amqp-example/contracts"
-	"github.com/streadway/amqp"
 	"log"
 	"math/rand"
 	"time"
+
+	"github.com/andreagrandi/go-amqp-example/contracts"
+	"github.com/aulwardana/amqp"
 )
 
 var (
-	amqpURI = flag.String("amqp", "amqp://guest:guest@localhost:5672/", "AMQP URI")
+	amqpURI = flag.String("amqp", "amqp://guest:guest@rhajlew5ia7qhk6w.onion:5672/", "AMQP URI")
 )
 
 func failOnError(err error, msg string) {

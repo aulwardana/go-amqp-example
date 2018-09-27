@@ -1,17 +1,19 @@
 # go-amqp-example
-Example of publisher and consumer of RabbitMQ messages in Golang
+Example of publisher and consumer of RabbitMQ messages over Tor Network in Golang
 
 # Requirements
 
-The following instructions assume that you have **Go** correctly installed (and $GOPATH set correctly) and **RabbitMQ** installed with default settings.
+The following instructions assume that you have **Go** correctly installed (and $GOPATH set correctly), **RabbitMQ** installed with default settings, and you running **Tor Service** in your local computer.
 
-# Getting the code
+Note: Please build the RabbitMQ hidden service using VPS first.
+
+# Getting the library
 
 ```
-go get github.com/andreagrandi/go-amqp-example
+go get github.com/aulwardana/amqp
 ```
 
-The code will be in **$GOPATH/src/github.com/andreagrandi/go-amqp-example**
+The library is already modified by me for connect to AMQP protocol over Tor network.
 
 # Running the code
 
@@ -31,4 +33,4 @@ go run consumer.go
 
 # Credits
 
-This source code is inspired by the examples available here http://godoc.org/github.com/streadway/amqp and it's been possible with the help of my co-workers at YoyoWallet.
+This source code is forked from https://github.com/andreagrandi/go-amqp-example.
