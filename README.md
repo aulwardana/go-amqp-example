@@ -1,4 +1,4 @@
-# go-amqp-example
+# Go AMQP example over Tor Network
 Example of publisher and consumer of RabbitMQ messages over Tor Network in Golang
 
 # Requirements
@@ -20,14 +20,14 @@ The library is already modified by me for connect to AMQP protocol over Tor netw
 Run the publisher:
 
 ```
-cd $GOPATH/src/github.com/andreagrandi/go-amqp-example/publisher
+cd $GOPATH/src/go-amqp-example/publisher
 go run publisher.go
 ```
 
 Run the consumer:
 
 ```
-cd $GOPATH/src/github.com/andreagrandi/go-amqp-example/consumer
+cd $GOPATH/src/go-amqp-example/consumer
 go run consumer.go
 ```
 
